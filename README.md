@@ -1,73 +1,107 @@
-# Welcome to your Lovable project
 
-## Project info
+# Project Title
 
-**URL**: https://lovable.dev/projects/7dd3abe6-01fb-46d1-861f-6ccfa068016d
+PawRescue – Animal Rescue & Adoption Platform
 
-## How can I edit this code?
+PawRescue is a full-stack, open-source platform that connects individuals, NGOs, and shelters to report, rescue, and adopt animals in need. It includes real-time reporting with geolocation, adoption listings, chat between rescuers and NGOs, and a dashboard to manage reports and adoptions seamlessly.
 
-There are several ways of editing your application.
 
-**Use Lovable**
+## Live Demo
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7dd3abe6-01fb-46d1-861f-6ccfa068016d) and start prompting.
+https://paw-rescue-three.vercel.app/
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+✅ Real-time animal rescue reporting with map location
+✅ Live chat between rescuer and NGOs using Socket.IO
+✅ Adoption listings with filters and contact forms
+✅ NGO dashboard to manage reports, verify cases, and mark resolved
+✅ Cloudinary image uploads for rescued animals
+✅ Push/email notifications for new reports and adoptions
+✅ Dark/light mode with smooth animations
+✅ Secure authentication with JWT
+✅ Responsive UI for mobile and desktop
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Installation Steps
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1️⃣ Clone Repository
+git clone https://github.com/RishabhPawRescue/PawRescue.git
+cd PawRescue
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+2️⃣ Setup Backend
+cd server
+npm install
+cp .env.example .env
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Default dev server: http://localhost:5000
 
-**Use GitHub Codespaces**
+3️⃣ Setup Frontend
+cd ../client
+npm install
+npm run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+Frontend URL: http://localhost:5173
 
-This project is built with:
+4️⃣ Run with Docker (optional)
+docker-compose up --build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Deployment
 
-## How can I deploy this project?
+https://paw-rescue-three.vercel.app/
 
-Simply open [Lovable](https://lovable.dev/projects/7dd3abe6-01fb-46d1-861f-6ccfa068016d) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+## Environment Variables
 
-Yes, you can!
+VITE_SUPABASE_URL=https://mmfstdoxylaohahuphlg.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1tZnN0ZG94eWxhb2hhaHVwaGxnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0NDkxMTIsImV4cCI6MjA3NzAyNTExMn0.1Cg7_Z4hkx7oRkav4v0c-fYOJVKUORFNISUt-pr8wpk
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Tech Stack
+
+🌐 Frontend
+
+React + Vite + TypeScript
+
+React Router v6
+
+Zustand (state) + React Query (server state)
+
+Tailwind CSS + shadcn/ui + Framer Motion
+
+React Hook Form + Zod
+
+Mapbox GL JS (or Leaflet + OpenStreetMap)
+
+Axios
+
+⚙️ Backend
+
+Node.js + Express + TypeScript
+
+MongoDB + Mongoose (2dsphere geospatial indexes)
+
+Socket.IO (real-time communication)
+
+Multer → Cloudinary (for uploads)
+
+Nodemailer (email) + Web Push (VAPID)
+
+Winston logging + Zod validation
+
+🧪 DevOps & Testing
+
+Docker (multi-stage build) + docker-compose
+
+ESLint + Prettier + Husky + lint-staged
+
+GitHub Actions (CI/CD)
+
+Jest + React Testing Library (frontend)
+
+Jest + Supertest (backend)
+
+
+
