@@ -13,20 +13,29 @@ https://paw-rescue-three.vercel.app/
 ## Features
 
 ✅ Real-time animal rescue reporting with map location
+
 ✅ Live chat between rescuer and NGOs using Socket.IO
+
 ✅ Adoption listings with filters and contact forms
+
 ✅ NGO dashboard to manage reports, verify cases, and mark resolved
+
 ✅ Cloudinary image uploads for rescued animals
+
 ✅ Push/email notifications for new reports and adoptions
+
 ✅ Dark/light mode with smooth animations
+
 ✅ Secure authentication with JWT
+
 ✅ Responsive UI for mobile and desktop
+
 
 ## Installation Steps
 
 1️⃣ Clone Repository
-git clone https://github.com/RishabhPawRescue/PawRescue.git
-cd PawRescue
+git clone https://github.com/RishabhArt/Paw_Rescue.git
+cd Paw_Rescue
 
 2️⃣ Setup Backend
 cd server
